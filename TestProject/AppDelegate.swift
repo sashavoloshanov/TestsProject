@@ -8,7 +8,7 @@
 
 import UIKit
 
-public var subjects = UserDefaults.standard.array(forKey: Server.StandartKeys.subjectsList)
+public var subjects = UserDefaults.standard.stringArray(forKey: Server.StandartKeys.subjectsList)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +18,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //TODO:- Regist all user info
+        if subjects == nil {
+            parseFileFromProject()
+        }
+        
         return true
+    }
+    
+    func parseFileFromProject() {
+        
+        let path = Bundle.main.path(forResource: "Subjects", ofType: "txt")
+        
+        let url = URL(fileURLWithPath: path!)
+        
+        do {
+            let data = try String(contentsOf: url, encoding: .utf8)
+            let myStrings = data.components(separatedBy: .newlines)
+            
+            subjects = myStrings
+            UserDefaults.standard.set(subjects, forKey: Server.StandartKeys.subjectsList)
+            
+            
+        } catch {
+            print(error)
+        }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

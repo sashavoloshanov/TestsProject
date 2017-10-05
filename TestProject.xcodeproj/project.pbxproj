@@ -15,6 +15,8 @@
 		900CC3A71F78C8BE00CAEDB4 /* SubjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CC3A61F78C8BE00CAEDB4 /* SubjectsTableViewController.swift */; };
 		900CC3AA1F78CA2A00CAEDB4 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CC3A91F78CA2A00CAEDB4 /* Server.swift */; };
 		900CC3AC1F78D3F200CAEDB4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CC3AB1F78D3F100CAEDB4 /* UIView+Extension.swift */; };
+		9068099E1F85F3B5004D3A8F /* Subjects.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9068099D1F85F3B4004D3A8F /* Subjects.txt */; };
+		906809A01F860568004D3A8F /* QuastionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068099F1F860568004D3A8F /* QuastionListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		900CC3A61F78C8BE00CAEDB4 /* SubjectsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsTableViewController.swift; sourceTree = "<group>"; };
 		900CC3A91F78CA2A00CAEDB4 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		900CC3AB1F78D3F100CAEDB4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9068099D1F85F3B4004D3A8F /* Subjects.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Subjects.txt; path = "Helper Files/Subjects.txt"; sourceTree = "<group>"; };
+		9068099F1F860568004D3A8F /* QuastionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuastionListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				900CC3941F78C88700CAEDB4 /* AppDelegate.swift */,
 				900CC3A91F78CA2A00CAEDB4 /* Server.swift */,
 				900CC3AB1F78D3F100CAEDB4 /* UIView+Extension.swift */,
+				9068099D1F85F3B4004D3A8F /* Subjects.txt */,
 				900CC3A81F78C8C500CAEDB4 /* View Controllers */,
 				900CC3981F78C88700CAEDB4 /* Main.storyboard */,
 				900CC39B1F78C88700CAEDB4 /* Assets.xcassets */,
@@ -77,6 +82,7 @@
 			children = (
 				900CC3961F78C88700CAEDB4 /* UserViewController.swift */,
 				900CC3A61F78C8BE00CAEDB4 /* SubjectsTableViewController.swift */,
+				9068099F1F860568004D3A8F /* QuastionListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 				900CC39F1F78C88700CAEDB4 /* LaunchScreen.storyboard in Resources */,
 				900CC39C1F78C88700CAEDB4 /* Assets.xcassets in Resources */,
 				900CC39A1F78C88700CAEDB4 /* Main.storyboard in Resources */,
+				9068099E1F85F3B5004D3A8F /* Subjects.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,7 @@
 				900CC3971F78C88700CAEDB4 /* UserViewController.swift in Sources */,
 				900CC3A71F78C8BE00CAEDB4 /* SubjectsTableViewController.swift in Sources */,
 				900CC3AA1F78CA2A00CAEDB4 /* Server.swift in Sources */,
+				906809A01F860568004D3A8F /* QuastionListTableViewController.swift in Sources */,
 				900CC3AC1F78D3F200CAEDB4 /* UIView+Extension.swift in Sources */,
 				900CC3951F78C88700CAEDB4 /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT2DFK4E8J;
 				INFOPLIST_FILE = TestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = svoloshanov.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT2DFK4E8J;
 				INFOPLIST_FILE = TestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = svoloshanov.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

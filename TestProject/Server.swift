@@ -14,6 +14,11 @@ class Server: NSObject {
     
     struct StandartKeys {
         static let subjectsList      = "Subjects"
+        static let correctAns        = "Correct"
+        static let name              = "userName"
+        static let reiting           = "reiting"
     }
+    
+    
     
 }

@@ -1,16 +1,14 @@
 //
-//  SubjectsTableViewController.swift
+//  QuastionListTableViewController.swift
 //  TestProject
 //
-//  Created by Voloshanov Sasha on 9/25/17.
+//  Created by Voloshanov Sasha on 10/5/17.
 //  Copyright © 2017 Sasha Voloshanov. All rights reserved.
 //
 
 import UIKit
 
-class SubjectsTableViewController: UITableViewController {
-    
-    let gradientLayer = CAGradientLayer()
+class QuastionListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,22 +18,17 @@ class SubjectsTableViewController: UITableViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.view.contentMode = UIViewContentMode.scaleAspectFit
         self.navigationController?.navigationBar.backgroundColor = UIColor.clear
+        
         let temp = UIImageView(image: UIImage())
         let TempImageView = UIImageView(image: UIImage(named: "background"))
         TempImageView.frame = self.tableView.frame
         self.tableView.backgroundView = TempImageView
-        
-//        var h = self.navigationController?.navigationBar.frame.size.height
-//
-//        let layer = CAGradientLayer()
-//        layer.frame = CGRect(x: 0, y: 0 - h!, width: view.frame.size.width, height: view.frame.size.height)
-//        layer.colors = [UIColor.red.cgColor, UIColor.cyan.cgColor, UIColor.green.cgColor, UIColor.yellow.cgColor]
-//        view.layer.insertSublayer(layer, at: 1)
-        
-        
-//        self.view.setGradientBackground()
-        
-        
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,26 +45,24 @@ class SubjectsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (subjects?.count)!
+        return 20
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
+
         tableView.backgroundColor = .clear
+        // Configure the cell...
+        cell.backgroundColor = UIColor.clear
         
-        cell.textLabel?.text = subjects![indexPath.row]
+        cell.textLabel?.text = "\(indexPath.row)"
         cell.textLabel?.textColor = UIColor.white
         
-        cell.backgroundColor = UIColor.clear
 
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            performSegue(withIdentifier: "show", sender: self)
-        
-    }
 
     /*
     // Override to support conditional editing of the table view.
