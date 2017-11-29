@@ -17,6 +17,9 @@
 		900CC3AC1F78D3F200CAEDB4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CC3AB1F78D3F100CAEDB4 /* UIView+Extension.swift */; };
 		9068099E1F85F3B5004D3A8F /* Subjects.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9068099D1F85F3B4004D3A8F /* Subjects.txt */; };
 		906809A01F860568004D3A8F /* QuastionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068099F1F860568004D3A8F /* QuastionListTableViewController.swift */; };
+		90942A2A1FCBEE8600B13303 /* QestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90942A291FCBEE8600B13303 /* QestionsViewController.swift */; };
+		90D6BB6B1FCF0144003E3FC3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6BB6A1FCF0144003E3FC3 /* HomeViewController.swift */; };
+		90D6BB6D1FCF136D003E3FC3 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6BB6C1FCF136D003E3FC3 /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +33,11 @@
 		900CC3A61F78C8BE00CAEDB4 /* SubjectsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsTableViewController.swift; sourceTree = "<group>"; };
 		900CC3A91F78CA2A00CAEDB4 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		900CC3AB1F78D3F100CAEDB4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		9068099D1F85F3B4004D3A8F /* Subjects.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Subjects.txt; path = "Helper Files/Subjects.txt"; sourceTree = "<group>"; };
+		9068099D1F85F3B4004D3A8F /* Subjects.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subjects.txt; sourceTree = "<group>"; };
 		9068099F1F860568004D3A8F /* QuastionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuastionListTableViewController.swift; sourceTree = "<group>"; };
+		90942A291FCBEE8600B13303 /* QestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QestionsViewController.swift; sourceTree = "<group>"; };
+		90D6BB6A1FCF0144003E3FC3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		90D6BB6C1FCF136D003E3FC3 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				900CC3941F78C88700CAEDB4 /* AppDelegate.swift */,
-				900CC3A91F78CA2A00CAEDB4 /* Server.swift */,
 				900CC3AB1F78D3F100CAEDB4 /* UIView+Extension.swift */,
-				9068099D1F85F3B4004D3A8F /* Subjects.txt */,
+				903F4C071F86433600C7D775 /* Helper Files */,
 				900CC3A81F78C8C500CAEDB4 /* View Controllers */,
 				900CC3981F78C88700CAEDB4 /* Main.storyboard */,
 				900CC39B1F78C88700CAEDB4 /* Assets.xcassets */,
@@ -81,10 +86,22 @@
 			isa = PBXGroup;
 			children = (
 				900CC3961F78C88700CAEDB4 /* UserViewController.swift */,
+				90D6BB6C1FCF136D003E3FC3 /* AboutUsViewController.swift */,
+				90D6BB6A1FCF0144003E3FC3 /* HomeViewController.swift */,
 				900CC3A61F78C8BE00CAEDB4 /* SubjectsTableViewController.swift */,
 				9068099F1F860568004D3A8F /* QuastionListTableViewController.swift */,
+				90942A291FCBEE8600B13303 /* QestionsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		903F4C071F86433600C7D775 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				900CC3A91F78CA2A00CAEDB4 /* Server.swift */,
+				9068099D1F85F3B4004D3A8F /* Subjects.txt */,
+			);
+			path = "Helper Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				900CC3971F78C88700CAEDB4 /* UserViewController.swift in Sources */,
+				90D6BB6D1FCF136D003E3FC3 /* AboutUsViewController.swift in Sources */,
+				90942A2A1FCBEE8600B13303 /* QestionsViewController.swift in Sources */,
 				900CC3A71F78C8BE00CAEDB4 /* SubjectsTableViewController.swift in Sources */,
+				90D6BB6B1FCF0144003E3FC3 /* HomeViewController.swift in Sources */,
 				900CC3AA1F78CA2A00CAEDB4 /* Server.swift in Sources */,
 				906809A01F860568004D3A8F /* QuastionListTableViewController.swift in Sources */,
 				900CC3AC1F78D3F200CAEDB4 /* UIView+Extension.swift in Sources */,

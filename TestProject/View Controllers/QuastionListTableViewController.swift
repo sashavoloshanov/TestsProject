@@ -13,6 +13,9 @@ class QuastionListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = subjects![section]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -56,7 +59,7 @@ class QuastionListTableViewController: UITableViewController {
         // Configure the cell...
         cell.backgroundColor = UIColor.clear
         
-        cell.textLabel?.text = "\(indexPath.row)"
+        cell.textLabel?.text = "Question #\(indexPath.row)"
         cell.textLabel?.textColor = UIColor.white
         
 

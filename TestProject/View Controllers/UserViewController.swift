@@ -18,6 +18,11 @@ class UserViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if reiting == nil {
+            reiting = [""]
+            UserDefaults.standard.set(reiting, forKey: Server.StandartKeys.reiting)
+        }
+        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
