@@ -10,8 +10,24 @@ import UIKit
 
 class QestionsViewController: UIViewController {
 
+    @IBOutlet weak var var4: UIButton!
+    @IBOutlet weak var var3: UIButton!
+    @IBOutlet weak var var2: UIButton!
+    @IBOutlet weak var Var1: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Var1.layer.cornerRadius = 9
+        Var1.clipsToBounds = true
+        
+        var2.layer.cornerRadius = 9
+        var2.clipsToBounds = true
+        
+        var3.layer.cornerRadius = 9
+        var3.clipsToBounds = true
+        
+        var4.layer.cornerRadius = 9
+        var4.clipsToBounds = true
 
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
